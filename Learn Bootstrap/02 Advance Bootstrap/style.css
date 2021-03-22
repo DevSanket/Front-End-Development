@@ -1,0 +1,76 @@
+/* .green{
+    background-color: green;
+    height: 80vh;
+}
+/* xs */
+/* @media(max-width:575px){
+    .green{
+        background-color: rgb(0, 255, 98);
+        height: 100vh;
+    }
+}
+/* sm  */
+/* @media(max-width:576px)and (max-width: 767px){
+    .green{
+        background-color: red;
+        height: 100vh;
+    }
+} */
+
+/* md  */
+/* 
+@media(min-width: 768px) and (max-width:991px) {
+    .green{
+        background-color: black;
+        height: 100vh;
+    }
+} */
+
+
+/* lg  */
+/* @media(min-width: 992px) and (max-width:1199px) { */
+    /* .green{ */
+        /* background-color: orange;
+        height: 100vh;
+    }
+} */ 
+/* xl  */
+/* @media(min-width:1200px){
+    .green{
+        background-color: pink;
+        height: 100vh;
+    }
+} */ 
+
+.con{
+    background-color: #a1a1a1;
+    height: 100vh;
+}
+
+.grey{
+    background-color: orange;
+    height: 200px;
+}
+
+.gr{
+    background-color: red;
+    height: 200px;
+}
+
+.green{
+    background-color: rgb(97, 240, 104);
+    
+}
+
+.blue{
+    background-color: rgb(103, 103, 194);
+}
+
+.rowHeight{
+    background-color: #000;
+    height: 200px;
+}
+
+.red{
+    background-color: red;
+}
