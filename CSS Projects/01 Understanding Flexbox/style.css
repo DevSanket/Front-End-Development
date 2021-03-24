@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 16px;
+    max-width: 950px;
+    margin: auto;
+}
+
+body h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    margin: 2rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+body h2{
+    margin: 1rem;
+    text-align: center;
+}
+
+#Parent .flexbox-container .flexbox_item{
+    font-size: 24px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: orange;
+    text-shadow: 1px 1px 1px #333;
+}
+
+#Parent .flexbox-container{
+    background-color: #333;
+    box-shadow: 0 0  10px 2px;
+    height: 300px;
+
+    
+    /* Display   */
+    display: flex;
+    /* Flex Direction  */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-wrap  */
+    /* flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse; */
+
+    /* Justify Content  */
+    height: 350px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: start;
+    justify-content: flex-end;
+    justify-content: left;
+    justify-content: right;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+
+    justify-content: space-evenly;
+
+    /* Align Items  */
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+
+    /* Align Content  */
+    align-content: normal;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+    align-content: stretch;
+}
+
+#Children .flexbox-container{
+    background-color: #333;
+    box-shadow: 0 0  10px 2px;
+    height: 300px;
+
+    /* Display   */
+    display: flex;
+    /* Flex Direction  */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-wrap  */
+    flex-wrap: wrap;
+
+    /* FLex Order  */
+
+}
+
+#Children  .flexbox-container .flexbox_item{
+    font-size: 24px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: orange;
+    text-shadow: 1px 1px 1px #333;
+    /* Display   */
+}
+
+/* #Children  .flexbox-container .flexbox_item:first-child{
+    order: 2;
+}
+#Children  .flexbox-container .flexbox_item:nth-child(2){
+    order: 6;
+}
+#Children  .flexbox-container .flexbox_item:nth-child(3){
+    order:5;
+}
+#Children  .flexbox-container .flexbox_item:nth-child(4){
+    order: 3;
+}
+#Children  .flexbox-container .flexbox_item:nth-child(5){
+    order: 4;
+}
+#Children  .flexbox-container .flexbox_item:nth-child(6){
+    order: 1;
+} */
+
+
+#Children  .flexbox-container .flexbox_item:first-child{
+    align-self: center;
+    align-self: baseline;
+    align-self: flex-start;
+}
+
+/* #Children  .flexbox-container .flexbox_item:nth-child(1){
+    flex-grow: 10;
+
+}
+#Children  .flexbox-container .flexbox_item:nth-child(6){
+    flex-shrink: 5;
+    align-self: flex-start;
+    
+} */
