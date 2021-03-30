@@ -1,0 +1,169 @@
+/* Media Query  */
+
+/* Desktop  */
+
+@media (min-width:1280px){
+    #nav,#Header{
+        max-width: 1280px;
+    }
+}
+
+
+/* Tablet  */
+@media (max-width:800px){
+    /* Nav  */
+    label{
+        font-size: 1.2rem;
+    }
+    nav .btns{
+        font-size: 0.8rem;
+    }
+    #Header{
+        left: 35%;
+        width: 250px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .btns{
+        color: var(--prim-c);
+        border: 2px solid var(--prim-c);
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    /* Social and Contact  */
+    #Social,#Contact{
+        height: 60vh;
+        top: 20%;
+    }
+
+    /* Footer  */
+
+    #Footer{
+        opacity: 0.75rem;
+    }
+
+
+}
+
+
+/* Tablet Landscape  */
+
+@media (max-width:1024px) and (orientation:landscape){
+    .btns{
+        color: var(--prim-c);
+        border:2px solid var(--prim-c);
+    }
+    #Header{
+        left: 35%;
+    }
+
+    #Social,#Contact{
+        height: 60vh;
+        top: 20%;
+        border: 1px solid #333;
+    }
+
+    #Footer{
+        opacity: 0.75;
+    }
+}
+
+/* Phone or Mobile 400px */
+
+@media (max-width:400px){
+    /* Nav  */
+
+    #nav{
+        width: 100%;
+        padding: .5rem;
+
+    }
+
+    #nav #logo{
+        height: 50px;
+        width: 45px;
+
+    }
+
+    #Header{
+        top: 60%;
+        left: 20%;
+        min-width: 200px;
+
+    }
+    h4{
+        display: none;
+    }
+    h1{
+        margin-top: 30vh;
+        font-size: 2.5rem;
+    }
+    #Social i,
+    #Contact i{
+        font-size: 1.4rem;
+        opacity: 0.75;
+    }
+
+     /* Footer  */
+    #Footer{
+        font-size: .8rem;
+    }
+}
+
+
+/* Mobile Landscape  */
+@media (max-width:900px) and (orientation:landscape){
+    #nav{
+        width: 80%;
+        padding: 2.5rem;
+    }
+
+    #nav #logo{
+        height: 50px;
+        width: 45px;
+    }
+
+    label{
+        font-size: 1.2rem;
+    }
+    .btns{
+        font-size: .8rem;
+        color: var(--prim-c);
+        border: 2px solid var(--prim-c);
+    }
+
+    /* Header  */
+    #Header{
+        top: 45%;
+        left: 35%;
+        max-width: 450px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h1{
+        font-size: 2.1rem;
+        margin-top: 20vh;
+    }
+
+    h4{
+        font-size: 1.3rem;
+    }
+
+    #Social i,#Contact i{
+            font-size: 1.4rem;
+    }
+
+    #Footer{
+        font-size: 0.8rem;
+    }
+}
