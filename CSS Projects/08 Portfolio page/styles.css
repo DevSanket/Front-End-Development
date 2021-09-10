@@ -147,3 +147,41 @@ button.toggler-menu{
         left:0
     }
 }
+
+
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+
+.banner:after{
+    content: '';
+    position: absolute;
+    right: -20vh;
+    bottom: -20vh;
+    width: 120vh;
+    height: 120vh;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    z-index: -1;
+}
+
+.top-fixed{
+    position: absolute;
+    padding: 30px 50px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.info{
+    margin-left: 195px;
+}
+
+.info label{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
