@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "portfolio-sanket",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
