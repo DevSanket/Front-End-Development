@@ -16,6 +16,8 @@ body {
     font-family: 'Roboto',sans-serif;
     padding: 0;
     margin: 0;
+    align-content: center;
+    
 }
 
 a {
@@ -56,6 +58,51 @@ a {
 }
 
 
+
+.img-fluid{
+    width: 100%;
+}
+
+.text-title{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: bold;
+}
+
+.secondary-title{
+    font-family: 'Poppins',sans-serif;
+
+}
+
+display-1{
+    font-size: 22px;
+}
+
+display-2{
+    font-size: 16px;
+}
+
+display-3{
+    font-size: 14px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.btn{
+    padding: 15px 20px;
+    border: none;
+}
+
+.btn-primary{
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
 
 /* section styling  */
 
@@ -117,6 +164,27 @@ a {
 /* Navigation Menu  */
 
 
+/* Main Section  */
+
+#site-main{
+    margin-top: 8em;
+}
+
+#posts{
+    margin-bottom: 5em;
+}
+
+.grid{
+    margin: 0 auto;
+}
+
+.grid .grid-item{
+    width:calc(30%);
+    margin-bottom: 3em;
+}
+
+/* Main Section  */
+
 /* Media Query  */
 
 @media (max-width: 574px)
@@ -150,4 +218,10 @@ a {
    .navbar{
     flex-direction: column;
    }
+}
+
+@media (max-width:768px){
+    .grid .grid-item{
+        width: calc(50% -20px);
+    }
 }

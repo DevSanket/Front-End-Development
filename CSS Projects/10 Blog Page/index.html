@@ -1,78 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gridy Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </head>
+  <body>
     <!-- Header  -->
-        <header id="header" class="shadow bg-light">
-            <nav class="container navbar">
-                <a href="/index.html" class="nav-brand text-dark">Gridy</a>
-            
-                <!-- toggle button  -->
-                <button class="toggle-button">
-                    <span><i class="fas fa-bars">
+    <header id="header" class="shadow bg-light">
+      <nav class="container navbar">
+        <a href="/index.html" class="nav-brand text-dark">Gridy</a>
 
-                    </i></span>
-                </button>
+        <!-- toggle button  -->
+        <button class="toggle-button">
+          <span><i class="fas fa-bars"> </i></span>
+        </button>
 
-            <!-- Collapse on Toggle Button click  -->
+        <!-- Collapse on Toggle Button click  -->
 
-            <div class="collapse">
-                <ul class="navbar-nav">
-                    <a href="#" class="nav-link">
-                        Home
-                    </a>
-                    <a href="#" class="nav-link">
-                        Blog
-                    </a>
-                    <a href="#" class="nav-link">
-                        Pages
-                    </a>
-                    <a href="#" class="nav-link">
-                        Category
-                    </a>
-                    <a href="#" class="nav-link">
-                        About
-                    </a>
-                    <a href="#" class="nav-link">
-                        Contact
-                    </a>
-                </ul>
+        <div class="collapse">
+          <ul class="navbar-nav">
+            <a href="#" class="nav-link"> Home </a>
+            <a href="#" class="nav-link"> Blog </a>
+            <a href="#" class="nav-link"> Pages </a>
+            <a href="#" class="nav-link"> Category </a>
+            <a href="#" class="nav-link"> About </a>
+            <a href="#" class="nav-link"> Contact </a>
+          </ul>
+        </div>
+
+        <div class="collapse">
+          <div class="navbar-nav">
+            <div class="search-box">
+              <a href="#" class="nav-link">
+                <i class="fas fa-search"></i>
+              </a>
             </div>
-
-            <div class="collapse">
-                <div class="navbar-nav">
-                    <div class="search-box">
-                        <a href="#" class="nav-link">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </div>
-                    <a href="#" class="nav-link">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="nav-link">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#" class="nav-link">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                   <a href="#" class="nav-link">
-                    <i class="fa-brands fa-xbox"></i>
-                   </a>
-                </div>
-            </div>
-        </nav>
-        </header>
+            <a href="#" class="nav-link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="nav-link">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="nav-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="nav-link">
+              <i class="fa-brands fa-xbox"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- Header End  -->
 
+    <!-- Main Site  -->
 
+    <main class="site-main" id="site-main">
+      <!-- Blog Post section  -->
+      <section id="posts">
+        <div class="container">
+          <div class="grid">
+            <!-- article  -->
+            <div class="grid-item">
+              <article class="article">
+                <div class="card">
+                  <div class="overflow-img">
+                    <a href="#">
+                      <img
+                        src="./assets/img1.jpg"
+                        alt="img-fluid"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-body text-center px-1">
+                    <a href="#">
+                      Looking for some feedback for this rejected transfer
+                      technology
+                    </a>
+                    <p class="secondary-title text-secondary display-3">
+                      <span>
+                        <i class="far fa-clock text-primary"> </i>
+                        Clock Wed 02 2021
+                      </span>
+                      <span>
+                        <i class="far fa-comments text-primary"> </i>
+                        12
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- End article  -->
+
+            <!-- article  -->
+            <div class="grid-item">
+              <article class="article">
+                <div class="card">
+                  <div class="overflow-img">
+                    <a href="#">
+                      <img
+                        src="./assets/img2.jpg"
+                        alt="img-fluid"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-body text-center px-1">
+                    <a href="#">
+                      Looking for some feedback for this rejected transfer
+                      technology
+                    </a>
+                    <p class="secondary-title text-secondary display-3">
+                      <span>
+                        <i class="far fa-clock text-primary"> </i>
+                        Clock Wed 02 2021
+                      </span>
+                      <span>
+                        <i class="far fa-comments text-primary"> </i>
+                        12
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- End article  -->
+            <!-- article  -->
+            <div class="grid-item">
+              <article class="article">
+                <div class="card">
+                  <div class="overflow-img">
+                    <a href="#">
+                      <img
+                        src="./assets/img3.jpg"
+                        alt="img-fluid"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-body text-center px-1">
+                    <a href="#">
+                      Looking for some feedback for this rejected transfer
+                      technology
+                    </a>
+                    <p class="secondary-title text-secondary display-3">
+                      <span>
+                        <i class="far fa-clock text-primary"> </i>
+                        Clock Wed 02 2021
+                      </span>
+                      <span>
+                        <i class="far fa-comments text-primary"> </i>
+                        12
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- End article  -->
+            <!-- article  -->
+            <div class="grid-item">
+              <article class="article">
+                <div class="card">
+                  <div class="overflow-img">
+                    <a href="#">
+                      <img
+                        src="./assets/img4.jpg"
+                        alt="img-fluid"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-body text-center px-1">
+                    <a href="#">
+                      Looking for some feedback for this rejected transfer
+                      technology
+                    </a>
+                    <p class="secondary-title text-secondary display-3">
+                      <span>
+                        <i class="far fa-clock text-primary"> </i>
+                        Clock Wed 02 2021
+                      </span>
+                      <span>
+                        <i class="far fa-comments text-primary"> </i>
+                        12
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- End article  -->
+            <!-- article  -->
+            <div class="grid-item">
+              <article class="article">
+                <div class="card">
+                  <div class="overflow-img">
+                    <a href="#">
+                      <img
+                        src="./assets/img5.jpg"
+                        alt="img-fluid"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-body text-center px-1">
+                    <a href="#">
+                      Looking for some feedback for this rejected transfer
+                      technology
+                    </a>
+                    <p class="secondary-title text-secondary display-3">
+                      <span>
+                        <i class="far fa-clock text-primary"> </i>
+                        Clock Wed 02 2021
+                      </span>
+                      <span>
+                        <i class="far fa-comments text-primary"> </i>
+                        12
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- End article  -->
+            <!-- article  -->
+            <div class="grid-item">
+              <article class="article">
+                <div class="card">
+                  <div class="overflow-img">
+                    <a href="#">
+                      <img
+                        src="./assets/img6.jpg"
+                        alt="img-fluid"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-body text-center px-1">
+                    <a href="#">
+                      Looking for some feedback for this rejected transfer
+                      technology
+                    </a>
+                    <p class="secondary-title text-secondary display-3">
+                      <span>
+                        <i class="far fa-clock text-primary"> </i>
+                        Clock Wed 02 2021
+                      </span>
+                      <span>
+                        <i class="far fa-comments text-primary"> </i>
+                        12
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- End article  -->
+            <!-- article  -->
+            <div class="grid-item">
+              <article class="article">
+                <div class="card">
+                  <div class="overflow-img">
+                    <a href="#">
+                      <img
+                        src="./assets/img7.jpg"
+                        alt="img-fluid"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-body text-center px-1">
+                    <a href="#">
+                      Looking for some feedback for this rejected transfer
+                      technology
+                    </a>
+                    <p class="secondary-title text-secondary display-3">
+                      <span>
+                        <i class="far fa-clock text-primary"> </i>
+                        Clock Wed 02 2021
+                      </span>
+                      <span>
+                        <i class="far fa-comments text-primary"> </i>
+                        12
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- End article  -->
+            <!-- article  -->
+            <div class="grid-item">
+              <article class="article">
+                <div class="card">
+                  <div class="overflow-img">
+                    <a href="#">
+                      <img
+                        src="./assets/img8.jpg"
+                        alt="img-fluid"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-body text-center px-1">
+                    <a href="#">
+                      Looking for some feedback for this rejected transfer
+                      technology
+                    </a>
+                    <p class="secondary-title text-secondary display-3">
+                      <span>
+                        <i class="far fa-clock text-primary"> </i>
+                        Clock Wed 02 2021
+                      </span>
+                      <span>
+                        <i class="far fa-comments text-primary"> </i>
+                        12
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- End article  -->
+            <!-- article  -->
+            <div class="grid-item">
+              <article class="article">
+                <div class="card">
+                  <div class="overflow-img">
+                    <a href="#">
+                      <img
+                        src="./assets/img9.jpg"
+                        alt="img-fluid"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-body text-center px-1">
+                    <a href="#">
+                      Looking for some feedback for this rejected transfer
+                      technology
+                    </a>
+                    <p class="secondary-title text-secondary display-3">
+                      <span>
+                        <i class="far fa-clock text-primary"> </i>
+                        Clock Wed 02 2021
+                      </span>
+                      <span>
+                        <i class="far fa-comments text-primary"> </i>
+                        12
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- End article  -->
+          </div>
+
+          <div class="text-center">
+            <button class="btn btn-primary secondary-title text-light">
+              Load More Posts...
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Post section  -->
+
+      <!-- Swiper Slider  -->
+
+      <section class="slider">
+        <div class="container">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./assets/slider/img1.jpg" class="img-fluid" alt="img">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                
+                <a href="#">
+                  <img src="./assets/slider/img2.jpg" class="img-fluid" alt="img">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./assets/slider/img3.jpg" class="img-fluid" alt="img">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./assets/slider/img4.jpg" class="img-fluid" alt="img">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./assets/slider/img5.jpg" class="img-fluid" alt="img">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./assets/slider/img6.jpg" class="img-fluid" alt="img">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Swiper Slide End  -->
+    </main>
+
+    <!-- Main Site End  -->
+
+   
+    <!-- Manotry  -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <!-- custom js file  -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
